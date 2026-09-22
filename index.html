@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Para Miranda, Mi Princesa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-glow" aria-hidden="true"></div>
+    <div id="fireflies" aria-hidden="true"></div>
+
+    <header class="music-controls">
+      <button id="musicToggle" class="ghost-btn" aria-label="Activar o desactivar música">
+        Música: Off
+      </button>
+    </header>
+
+    <section id="welcome" class="welcome active" aria-live="polite">
+      <div class="welcome-card">
+        <p class="intro">Para Miranda…</p>
+        <h1>Mi Princesa 💛</h1>
+        <p class="subtitle">Preparé algo pequeño para ti.</p>
+        <button id="startExperience" class="cta-btn">Descubrir mi sorpresa ✨</button>
+      </div>
+    </section>
+
+    <main id="experience" class="experience" aria-hidden="true">
+      <section class="bouquet-stage">
+        <div id="sparkles" class="sparkles" aria-hidden="true"></div>
+
+        <div id="bouquet" class="bouquet" aria-label="Ramo de flores amarillas digital">
+          <div class="stems">
+            <div class="stem" style="--x:-34%; --h:56%; --d:0.1s;"><span class="leaf left"></span><span class="leaf right"></span></div>
+            <div class="stem" style="--x:-20%; --h:62%; --d:0.3s;"><span class="leaf left"></span><span class="leaf right"></span></div>
+            <div class="stem" style="--x:-8%; --h:68%; --d:0.45s;"><span class="leaf left"></span><span class="leaf right"></span></div>
+            <div class="stem" style="--x:4%; --h:72%; --d:0.6s;"><span class="leaf left"></span><span class="leaf right"></span></div>
+            <div class="stem" style="--x:16%; --h:66%; --d:0.75s;"><span class="leaf left"></span><span class="leaf right"></span></div>
+            <div class="stem" style="--x:30%; --h:58%; --d:0.95s;"><span class="leaf left"></span><span class="leaf right"></span></div>
+          </div>
+
+          <div class="flowers">
+            <div class="flower" style="--x:-34%; --y:39%; --s:0.92; --delay:1.1s;"><span class="core"></span></div>
+            <div class="flower" style="--x:-22%; --y:30%; --s:1.02; --delay:1.45s;"><span class="core"></span></div>
+            <div class="flower" style="--x:-8%; --y:22%; --s:1.1; --delay:1.8s;"><span class="core"></span></div>
+            <div class="flower" style="--x:4%; --y:18%; --s:1.2; --delay:2.15s;"><span class="core"></span></div>
+            <div class="flower" style="--x:17%; --y:24%; --s:1.06; --delay:2.45s;"><span class="core"></span></div>
+            <div class="flower" style="--x:30%; --y:34%; --s:0.95; --delay:2.75s;"><span class="core"></span></div>
+            <div class="flower" style="--x:9%; --y:34%; --s:0.9; --delay:3s;"><span class="core"></span></div>
+          </div>
+
+          <div class="ribbon">Para mi Princesa 💛</div>
+        </div>
+
+        <div id="petalRain" class="petal-rain" aria-hidden="true"></div>
+      </section>
+
+      <section class="message-block" aria-live="polite">
+        <p class="line" data-step="1">
+          Miranda, quizá estas flores sean digitales,<br />
+          pero todo lo que quiero decirte con ellas es real.
+        </p>
+        <p class="line" data-step="2">
+          Quería regalarte un pequeño pedacito de alegría,<br />
+          porque tú haces que mis días sean mucho más bonitos.
+        </p>
+        <p class="line" data-step="3">Te quiero muchísimo. 💛</p>
+        <p class="line subtle" data-step="4">
+          Casi dos años compartiendo momentos,<br />
+          risas, aventuras y recuerdos que quiero seguir construyendo contigo.
+        </p>
+
+        <button id="openLetter" class="cta-btn secondary">Hay algo más que quiero decirte 💌</button>
+      </section>
+    </main>
+
+    <section id="letterOverlay" class="letter-overlay" aria-hidden="true">
+      <div class="letter" role="dialog" aria-modal="true" aria-label="Carta para Miranda">
+        <button id="closeLetter" class="close-letter" aria-label="Cerrar carta">✕</button>
+        <p>Mi Princesa:</p>
+        <p>
+          No necesitaba una ocasión especial para darte flores, simplemente quería hacer algo
+          diferente para recordarte lo importante que eres para mí.
+        </p>
+        <p>
+          Gracias por cada momento, por cada sonrisa, por cada conversación y por todos esos
+          pequeños detalles que hacen que estar contigo sea tan especial.
+        </p>
+        <p>
+          Ya casi son dos años, y aunque el tiempo pasa rápido, sigo queriendo crear muchos más
+          recuerdos contigo.
+        </p>
+        <p>
+          Estas flores son solo una pequeña forma de decirte:<br />
+          <strong>Te quiero muchísimo. 💛</strong>
+        </p>
+        <p>
+          Con cariño,<br />
+          Tu novio.
+        </p>
+
+        <div id="onePieceHint" class="one-piece-hint" aria-hidden="true">
+          <span class="hat-brim"></span>
+          <span class="hat-top"></span>
+        </div>
+      </div>
+    </section>
+
+    <audio id="bgMusic" preload="metadata" loop>
+      <source src="assets/music/those-eyes.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
